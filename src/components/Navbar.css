@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:  url('/public/background.jpg');
+    color: #fce1d0;
+    padding: 0.1rem;
+
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+.logo img {
+    /* margin-left: -100px; */
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: -120px;
+}
+
+  .contact-info {
+    margin-top: -100px;
+    margin-left: 30px;
+    font-weight: 100 ;
+    display: flex;
+    font-size: medium;
+    gap: 3rem;
+
+}
+
+.divider {
+  /* margin-right: 900px;
+  margin-left: -300px; */
+  width: 430px;
+  height: 1px; /* Adjust the height as needed */
+  background-color: #ccc; /* Choose your desired color */
+  /* margin: 0 1rem; */
+  margin-left: -400px;
+
+}
+.divider1 {
+  width: 430px;
+  height: 1px; /* Adjust the height as needed */
+  background-color: #ccc; /* Choose your desired color */
+  margin-right: 50px;
+  /* margin: 0 1rem; */
+  /* margin-right: 100px; */
+}
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-left: -40px;
+    font-weight: 1000 ;
+    font-size: small;
+    /* padding-top: 50px; */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fce1d0;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffc107; /* Change to your preferred hover color */
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 4rem;
+    font-weight: 1000 ;
+    font-size: small;
+    margin-top: -100px;
+    margin-right: -650px;
+
+    
+  }
+  
+  .login,
+  .cart {
+    cursor: pointer;
+  }
+
+   .log {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+
+  }
+  
+  .search-bar {
+  margin-top: 10px;
+  /* margin-left: 200px; */
+  text-align: right;
+
+  }
+
+  .search {
+    background-image:  url('/public/background.jpg');
+    border: #ccc;
+    padding: 10px;
+  }
+  
