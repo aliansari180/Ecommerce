@@ -1,23 +1,27 @@
 import React from 'react';
-import './Body.css'; // Import the CSS file for styling
+import './Body.css';
 
 const Body = () => {
   return (
-    <div className="body-container">
-      <div className="content">
-        <h3>NEW ARRIVALS</h3>
-        <h2>Discover the World of Leather</h2>
-        <p>Experience the finest craftsmanship and timeless elegance.</p>
-        <p className="description">
-          Explore the freedom of adventure with the Walker Leather Backpack in Vintage Oak.
-        </p>
-        <div className="buttons">
-          <button className="shop-button">Shop Now</button>
-          <button className="explore-button">Explore More</button>
-        </div>
-      </div>
+    <>
+    <div class="container">
+    <h1>OUR CARS</h1><br />
+ <div class="wrapper">
+   <div class="banner-image"> </div>
+   <div class="banner-image1"> </div>
+   <div class="banner-image2"> </div>
+   <div class="banner-image3"> </div>
+ 
+  </div>
+  
     </div>
+   
+   
+    </>
+
   );
 };
+
+
 
 export default Body;

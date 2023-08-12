@@ -1,69 +1,144 @@
-/* Body.css */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-.body-container {
+body {
+  /* background: rgb(0,212,255);
+  
+  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
+  
+  background-image: url(https://images.unsplash.com/photo-1619204715997-1367fe5812f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889&q=80); */
+  /* background-size: cover;
+  background-position: center;   */
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: center;     */
+  /* height: 100vh;   */
+}
+
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 38px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: serif ;
+  width: 100%;
+  height: 100%;
+  
+}
 
-  }
-  
-  .content {
-    text-align: center;
-    color: #fce1d0;
-    margin-top: -200px;
-  }
+.banner-image {
+  background-image: url(/public/land.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+}
+.banner-image1 {
+  background-image: url(/public/civic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+}
+.banner-image2 {
+  background-image: url(/public/markx.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+}
+.banner-image3 {
+  background-image: url(/public/pla.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 230px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+}
 
-  .content p {
-    font-weight: 1000;
-font-size: medium;
-  }
+h1{
+  font-family: 'Righteous', sans-serif;
+  color: rgba(255,255,255,0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(248, 248, 2, 0.366);
+}
+
+p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper{
+  margin-top: 18px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
   
-  h2 {
-    font-size: 4rem;
-    color: #fce1d0;
-    /* margin-bottom: 1rem; */
-  }
-  h3 {
-    font-size: 1rem;
-    color: #fce1d0;
-    margin-bottom: 1rem;
-  }
-  
-  .description {
-    margin: 1rem ;
-    font-weight: 1000;
-    font-size: larger;
-  }
-/*   
-  .divider {
-    width: 100px;
-    height: 2px;
-    background-color: #ccc;
-    margin: 0 auto;
-  } */
-  
-  .buttons {
-    margin-top: 1.5rem;
-  }
-  
-  .shop-button,
-  .explore-button {
-    padding: 10px 40px;
-    margin: 0 60px;
-    background-color: #8B4513; /* Leather brown color */
-    color: #fce1d0;
-    border: none;
-    cursor: pointer;
-    font-family: serif ;
-    font-weight: 1000;
-    font-size: large;
-  }
-  
-  /* .explore-button {
-    background-color: transparent;
-    border: 2px solid #8B4513; 
-    color: #fce1d0;
-  } */
-  
+}
+
+.outline:hover{
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;  
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+}
+
+.fill:hover{
+  transform: scale(1.125);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}

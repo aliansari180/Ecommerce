@@ -1,43 +1,22 @@
 import React from 'react';
-import './Navbar.css'; // Import the CSS file for styling
+import './Navbar.css'; // Make sure to create this CSS file for styling
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="contact-info">
-        <p>123-456-7890</p>
-        <p>Contact us</p>
-      </div>
-      <div className="divider">
-      <ul className="nav-links">
-        <li><a href="#">LEATHER <br /> JACKETS</a></li>
-        <li><a href="#">LEATHER  <br />GOODS</a></li>
-        <li><a href="#">APPAREL</a></li>
-        <li><a href="#">DISCOVER</a></li>
-      </ul>
-        </div> 
       <div className="logo">
-        <img src="navlogo.png" alt="logo" />
+      <img src="navlogo.png" alt="" />
+        <h1>
+            CAR ART 
+            </h1>
       </div>
-      <div className="user-actions">
-        <div className="login">Login
-        <img src="login.png" className='log' />
-        </div>
-        <div className="cart">Cart
-        <img src="cart.png" className='log' />
-        
-        </div>
-        <div className="search">
-          {/* Search bar or icon */}
-        </div>
-      </div>
-      <div className="divider1">
-      <div className="search-bar">
-      <input type="search" name="" className='search' id="" placeholder='Search' />
-      </div>
-        </div> {/* Line between user actions and search bar */}
+      <ul className="nav-links">
+        <li><a href="#">TRACKS</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;
