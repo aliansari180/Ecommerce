@@ -1,53 +1,90 @@
+/* Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: #ffffff;
     padding: 20px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    /* margin-top: -150px;   */
-}
-
-.logo h1 {
-  margin-top: -60px;
-}
-
-  .logo img {
-    width: 200px;
-    height: 200px;
-    margin-top: -80px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   }
   
   .nav-links {
     list-style: none;
     display: flex;
-    margin: auto;
-    margin-right: 400px;
-    margin-top: -20px;
-    
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: -100px;
+  }
+  .nav-links1 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 50px;
   }
   
   .nav-links li {
     margin-right: 40px;
-    margin-top: 40px;
+    /* margin-left: 20px; */
+  }
+
+  .nav-links1 li {
+    margin-right: 40px;
+    /* margin-left: 20px; */
+
+    
   }
   
   .nav-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #333333;
+    font-weight: 400;
     transition: color 0.3s ease-in-out;
-    font-weight: 600;
-    font-size: large;
-    
-    
   }
+  .nav-links1 a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+  }
+
   
   .nav-links a:hover {
-    color: #ff9900; /* Change this color to your desired hover color */
+    color: #ff9900;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    margin-left: 190px;
+  }
+  
+  .hamburger-menu {
+    width: 30px;
+    height: 2px;
+    background-color: #333333;
+    position: relative;
+    display: none;
+  }
+  
+  /* Add media query for responsive design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+   
   }
   
