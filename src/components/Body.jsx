@@ -1,26 +1,30 @@
-import React from 'react';
-import './Body.css'; // Import the CSS file for styling
+import './Body.css'
+import ImageGallery from './ImageGallery';
 
-const Body = () => {
-  return (
-    <div className="body-container">
-      <div className="text-container">
-        <h1>Eco International</h1>
-      </div>
-      <div className="card">
-        <h2>Eco International</h2>
-        <p>About our eco-friendly initiatives and projects.</p>
-      </div>
-      <div className="image-container">
-        <img src="House.jpg" alt="Large Image" />
-      </div>
-      <div className="about-card">
-        <h3>About Us</h3>
-        <p>We are dedicated to making a positive impact on the environment through our sustainable practices.</p>
-      </div>
-      <img src="icon.jpg" alt="" className='icon' />
+const images = [
+  { src: 'shi.jpg' },
+  { src: 'download.jpg' },
+  { src: 'R.jpg' },
+  { src: 'pan.jpg' },
+  // Add more images here
+];
+
+function Body() {
+    return(
+
+<>
+    <div className="container">
+        <img src="bg.jpg" alt="" />
+        <h1>SALE 70% OFF</h1>
+        <p>The Best Men Collection Of Summer</p>
+        <button className="shop-now-button">Shop Now</button>
     </div>
-  );
-};
+    <div>
+      <ImageGallery images={images} />
+    </div>
+</>
+
+    )
+}
 
 export default Body;
